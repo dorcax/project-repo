@@ -1,0 +1,86 @@
+.about-main{
+ background-color: gainsboro;
+ 
+ 
+ 
+}
+.about-container{
+    width: 800px;
+    padding-top:3rem ;
+    margin-left:  20%;
+   
+   
+} 
+.about-container h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.about-me{
+    background: url("../../assets/me2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px auto;
+}
+.about-text{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+}
+.about-text .text{
+   font-size: 26px;
+   padding: 15px;
+   font-weight: 400;
+   margin-bottom: 25px;
+}
+
+.about-text .favourite{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .about-container{
+    width: 600px;
+    margin-left: 5px;
+
+   
+   
+}
+.about-container h2{
+    margin-right:8rem;
+    
+}
+.about-me{
+   
+    margin:5% 20%;
+}
+.about-text .text,.favourite{
+    width: 500px;
+   font-size: 20px;
+   margin-right: 20%;
+   font-weight: 500;
+   
+}
+
+.about-text .favourite{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20%;
+    
+}
+
+    
+}
