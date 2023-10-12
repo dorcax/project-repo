@@ -1,42 +1,35 @@
 
 .resume-container {
-    /* width: 200px; */
-    background-image: url("../../assets/laptop1.jpg");
+    background-image: url("../../assets/laptop.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
-    background-position: fixed;
+    /* background-position: fixed; */
+     overflow: hidden;
 }
 .resume-img{
     text-align: center;
     color: #fff;
-    padding-top: 15% ;
+    padding-top: 10% ;
 }
 
 .resume-img h1{
     text-transform: capitalize;
     font-size: 40px;
-    padding: 20px;
+    /* padding: 15px; */
 
 }
 .resume-img button{
-    padding: 15px 30px;
+    padding: 25px 45px;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #36454F;
     color: #fff;
+    border: none;
 }
 .resume-img button:hover{
     background-color: #fff;
     color: #36454F;
     font-size: 22px;
-}
-@media screen  and (max-width:600px){
-
-    .resume-img{
-    text-align: center;
-    color: #fff;
-    padding-top: 35% ;
-}
 }

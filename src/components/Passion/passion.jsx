@@ -4,7 +4,7 @@ import frontend from "../../assets/undraw_static_website_0107.svg"
 import "./passion.css"
 export default function Passion() {
     return (
-        <div className="container-passion">
+        <div className="container-passion" id="passion">
             <div className="passion-main">
                 <div className="passion-text">
                     <h2>what i'm passionate about 🤗</h2>

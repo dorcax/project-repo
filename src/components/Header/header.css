@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height:800px;
+    overflow: hidden;
+    position: relative;
+    
+    
+
     
     
 }
@@ -33,25 +38,24 @@
     
 }
 /* ............................medis queries(medium devics) */
-@media screen  and (max-width:1024px) {
+@media screen  and (max-width:680px){
+    .background-image{
+    position: absolute;
+    left:-40%;
+    padding-top: 45% ;
     
 }
-
-
-/* ............................. media queries(small devices) */
-/* @media screen and (max-width:600px) {
-.background-image{
-    color: #fff;
-    padding: 50% 20% 0 0;
+   .background-image h2{
+    font-size:5rem;
+    padding-left: 4rem;
+        
     
 }
-    .background-image h2{
-        font-size: 3.5rem;
-        
-    }
-    .background-image p{
-        font-size: 1.3rem;
-        
-    }
+.background-image p{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-left: 4rem;
     
-} */
+    
+}
+}

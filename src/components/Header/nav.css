@@ -6,8 +6,17 @@
     position: fixed;
     top: 0;
      z-index: 999; 
+     overflow: hidden;
+
+  
   
 }
+/* .container-nav nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+} */
 .container-nav nav ul{  
     display: flex;
     justify-content:flex-end;
@@ -17,7 +26,7 @@
 }
 .container-nav nav ul li {
   position: relative;
-  right: 8%;
+  right: 5%;
   padding-left: 3rem;
 
 }
@@ -31,9 +40,9 @@
     content: "";
     position: absolute;
     left: 30px;
-    width: 100%;
+    width: 100px;
     bottom: -15px;
-    transition: all 0.3s;
+    transition: all 0.8s;
     opacity:0;
     border-bottom: 4px solid rgba(77, 181, 255, 0.918);
 
@@ -45,3 +54,73 @@
 .container-nav nav ul li .link:hover{
     color: rgba(77, 181, 255, 0.918);
 } 
+
+.container-nav .toggle-icon{
+    display: none;
+    color: #fff;
+}
+@media screen  and (max-width:680px){
+    .container-nav{
+        position: relative;
+        height: 50px;
+        transition: 0.5s height ease-in-out;
+        
+    }
+    .container-nav.expanded{
+        height: 600px;
+        
+    }
+    .container-nav.expanded  nav ul{
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* opacity: 1; */
+    }
+    .container-nav.expanded  nav ul li  {
+        margin:20px 0;
+        font-size:30px;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+  
+    .container-nav .toggle-icon{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        font-size: 35px;
+        color: #D9D2c3;
+    }
+    .container-nav  nav ul  {
+        display:none ;
+    }
+    .container-nav nav ul{
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        /* opacity: 1; */
+    }
+    .container-nav nav ul li  {
+        margin:20px 0;
+        font-size:30px;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+   .container-nav nav ul li .link::after{
+    left: 0;
+   }
+
+}

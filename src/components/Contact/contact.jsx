@@ -1,7 +1,7 @@
 import "./contact.css"
 export default function Contact() {
     return (
-        <div className="contact-container">
+        <div className="contact-container" id="contact">
             <div className="contact-image">
                 <img src="/images/send.svg" alt=" send email"  width={80} />
             </div>

@@ -1,6 +1,7 @@
 .container-experience{
     background-color:#f1f1f1;
-    height: 500px;
+    /* height: 800px; */
+     overflow: hidden;
 }
 .container-experience h2{
     text-transform: uppercase;
@@ -17,21 +18,21 @@
     margin: 20px 30px;
 
 }
-.techExp p{
-    margin-left: 10%;
-    font-size: 20px;
+.techExp .tech{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
-.company-logo p{
-    font-size: 20px;
+.company-logo .company-text{
+    font-size: 1.4rem;
 }
 .company-logo img{
     padding-top: 20px;
 }
-@media screen  and (max-width:600px){
+@media screen  and (max-width:680px){
 
-    .container-experience{
+ .container-experience{
     
-    height: 650px;
+   padding-bottom: 50px;
 }
 .tech-main{
     display: grid;
@@ -39,18 +40,13 @@
     gap: 10%;
 
 }
+.techExp .tech,.company-logo .company-text{
+   
+    text-align: center;
+}
 .tech-main img{
     width: 120px;
 }
-.techExp p{
-    margin-left: 3%;
-    font-size: 16px;
-}
-.company-logo p{
-    font-size: 17px;
-}
-.company-logo img{
-    width: 100px;
-}
+
 
 }

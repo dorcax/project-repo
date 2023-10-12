@@ -3,7 +3,7 @@ import ProjectImage from "./projectimage"
 import "./project.css"
 export default function Project() {
     return (
-        <div className="container-project">
+        <div className="container-project" id="project">
             <div className="mainproject">
                 <h2>what have worked on </h2>
                 </div>

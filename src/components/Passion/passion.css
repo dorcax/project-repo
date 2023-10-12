@@ -1,6 +1,7 @@
 .passion-main{
     background-color:#36454F;
-    height: 650px
+    /* height: 680px */
+       overflow: hidden;
 }
 .passion-text{
     text-align: center;
@@ -14,6 +15,7 @@
 .passion-image .passion-img{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    /* grid-template-columns: repeat(3,1fr); */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -26,6 +28,7 @@
     background-color:#0a122abe;
     border-radius: 20px;
     text-align: center;
+    margin-bottom: 3rem;
     
     
 
@@ -52,15 +55,30 @@
     margin-bottom: 20px;
     
 }
-@media screen  and (max-width:600px){
-
-    .passion-main{
-    height: 1600px;
-}
-.passion-text{
-    padding-top: 4rem;
-    font-size: 22px;
+@media screen  and (max-width:680px){
+    .passion-text{
    
+    padding-bottom: 2rem;
+   
+    
+}
+    .passion-image .passion-img{  
+    grid-template-columns: repeat(1,1fr);
+      gap: 4px;
+      
+}
+.passion-front-end h2{
+   
+    font-size: 24px;
+
+}
+.passion-front-end p{
+    color: #fff;
+    padding:14px;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
     
 }
 

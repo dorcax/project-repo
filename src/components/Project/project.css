@@ -1,37 +1,42 @@
 .container-project{
     background-color: gainsboro;
     padding: 20px ;
-    height: 700px;
+    overflow: hidden;
 
 }
 .mainproject h2{
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 500;
     padding: 40px;
     text-transform: capitalize;
     text-align: center;
 }
 .project-data {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 20px;
-    padding: 10px;
-    /* background-color: blue; */
+    /* grid-template-columns: repeat(3,1fr); */
+     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10px;
+    padding: 15px;
+
 }
 .project-data .project-image{
-    width:350px;
-    height: 360px;
-    background-color:rgba(169, 169, 169, 0.795)
+    width:450px;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.219);
+
+  
     
 }
 
 .project-data .project-image img{
-    width:350px ;
-    height: 200px; 
+    width:450px ;
+    height: 250px; 
+    
 }
  .main-text{
     text-align: center;
     padding: 10px;
+   
 }
  .project-text h2{
     text-transform: capitalize;
@@ -45,36 +50,56 @@
 }
 .demolink{
     margin: 20px;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
+    
     
 } 
 .demolink a{
     color: #000;
     text-transform: capitalize;
-} 
-/* @media screen  and (max-width:600px){
 
-    .container-project{
-    height: 1700px;
+} 
+@media screen  and (max-width:680px){
+.container-project{
+    background-color: gainsboro;
+    padding: 0px ;
+    
 
 }
 .project-data {
-
-    gap: 40px;
-    padding: 15px;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    padding-left: 0;
+    /* padding: 0 10%; */
+    
+   
 }
-.project-data .project-image img{
-    width:400px ;
-    height: 200px;
+ .project-data .project-image{
+    width:700px;
+    height: 400px;
+    margin-bottom: 30px;
+   
+    
+}
+ .project-data .project-image img{
+    width:700px ;
+    height: 250px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+} 
+ .main-text{
+    text-align: center;
+
+   
 }
-.main-text{
-    width: 400px;
-    height: 250px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+.demolink{
+
+    justify-content: space-evenly;
+    
+    
+} 
+ 
+
 }
-} */
